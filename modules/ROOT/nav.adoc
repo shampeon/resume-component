@@ -1,0 +1,4 @@
+* xref:resume.adoc[]
+** xref:work-history.adoc[]
+** xref:education.adoc[]
+* xref:about.adoc[]

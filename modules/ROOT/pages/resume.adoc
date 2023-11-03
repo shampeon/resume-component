@@ -1,0 +1,44 @@
+= Ian Evans
+
+Technical writer and programmer with extensive experience in producing documentation and example code for enterprise and infrastructure application developers.
+
+== Skills
+
+I am proficient or conversant in the following programming and query languages:
+
+* Java
+* Python
+* Javascript/Typescript
+* Ruby
+* C#
+* Go
+* C/C++
+* SQL
+* CQL
+* Bash
+
+I have authored in a wide variety of formats, including:
+
+* Asciidoc
+* Markdown
+* HTML
+* DITA
+* Docbook
+* XML
+* SGML
+
+== Strengths
+
+In addition to my writing and programming experience, I try to focus on improving the structures and processes that lead to successful documentation, particularly about the collaboration between writers, engineers, and product managers.
+I try to think holistically about how docs teams work within an organization, and take a lot of pride in making it easier for other writers to focus on their strenths by improving internal tools and workflows.
+That also means collaborating with engineering teams to integrate docs into the overall development effort.
+For example, I've successfully worked with engineers to automatically generate docs from code, and set up a workflow that had writers participate in code reviews to ensure that the generated documentation was high quality from the moment the code was merged.
+
+== Documentation as user advocacy
+
+I view the role of documentation as the first user advocate of the development cycle.
+By that I mean that docs writers are often the first ones to actually use a feature or product in the way the end user is expected to use it.
+Documentation teams can provide crucial usability feedback to improve the quality of features and products internally. This doesn't occur in a vaccuum, however.
+It requires documentation to be an active collaborator in the development process, not just a downstream consumer.
+
+Creating high quality, user-focused documentation is the end result of investing in documentation as part of the overall development process.

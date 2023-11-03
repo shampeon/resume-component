@@ -1,0 +1,35 @@
+= Work history
+
+== Cockroach Labs (2020-2023)
+
+Staff technical writer
+
+Documented https://www.cockroachlabs.com/docs/[CockroachDB], a distributed SQL database.
+Wrote developer and API documentation for CockroachDB and CockroachDB Cloud services.
+
+== DataStax (2013-2020)
+
+Staff writer
+
+Documented Apache Cassandra, DataStax Enterprise, and DataStax Astra.
+Wrote developer documentation for applications that integrated with Cassandra, with focus on Cassandra drivers, Apache Spark for analytical workloads, and GraphQL and REST interfaces.
+
+== Oracle (2010-2013)
+
+Senior technical writer
+
+Documented the Java EE platform.
+Technical lead for the https://docs.oracle.com/javaee/7/tutorial/[Java EE Tutorial], and lead writer for Enterprise JavaBeans (EJBs), the Java Persistence API (JPA), and web services (JAX-RS, JAX-WS).
+
+== Sun Microsystems (2002-2010)
+
+Staff writer
+
+Documented the Java EE platform.
+Technical lead for the https://docs.oracle.com/javaee/7/tutorial/[Java EE Tutorial], and lead writer for Enterprise JavaBeans (EJBs), the Java Persistence API (JPA), and web services (JAX-RS, JAX-WS).
+
+== Earlier positions (1997-2002)
+
+I started work as a junior technical writer at Borland Corporation after interning with them during college at UC Santa Cruz.
+After that, I worked at Lutris Technologies, a startup that created an open-source J2EE applicaiton server.
+Then I joined a very small company in Napa called the Aurora Group run by a friend-of-a-friend that developed a wine recommendation engine.

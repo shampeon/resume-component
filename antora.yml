@@ -1,0 +1,10 @@
+name: resume-component
+title: Resume
+version: 0.0.1
+start_page: resume.adoc
+asciidoc:
+  attributes:
+    source-language: asciidoc@
+    table-caption: false
+nav:
+- modules/ROOT/nav.adoc
