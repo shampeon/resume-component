@@ -1,4 +1,4 @@
-= Ian Evans Resume
+= Ian Evans resume
 :url-project: https://techne.net
 :url-docs: https://docs.techne.net
 :url-org: https://github.com/shampeon
@@ -12,7 +12,7 @@ This is an Antora demo site with information on the work history of Ian Evans, a
 * {url-docs}[Deployed documentation site for this component]
 * {url-org}[Ian's GitHub]
 
-== Copyright and License
+== Copyright and license
 
 Copyright (C) 2023
 

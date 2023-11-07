@@ -19,7 +19,7 @@ I am proficient or conversant in the following programming and query languages:
 
 I have authored in a wide variety of formats, including:
 
-* Asciidoc
+* xref:about.adoc[Asciidoc]
 * Markdown
 * HTML
 * DITA
