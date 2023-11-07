@@ -1,6 +1,6 @@
 = Ian Evans
 
-Technical writer and programmer with extensive experience in producing documentation and example code for enterprise and infrastructure application developers.
+I am Ian Evans (he/him), a technical writer and programmer with extensive experience in producing documentation and example code for enterprise and infrastructure application developers.
 
 == Skills
 
