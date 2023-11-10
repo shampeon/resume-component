@@ -1,0 +1,23 @@
+on:
+  push:
+    branches:
+      - main  
+  workflow_dispatch:
+
+jobs:
+  build:
+    permissions: write-all
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.ACTIONS_KEY }}
+    steps:
+      - name: Trigger Workflow
+        uses: actions/github-script@v6
+        with:
+          script: |
+            github.rest.actions.createWorkflowDispatch({
+              owner: 'shampeon',
+              repo: 'docs-site',
+              workflow_id: 'publish.yaml',
+              ref: 'main',
+            })
