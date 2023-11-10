@@ -1,3 +1,5 @@
+name: Trigger site publish
+
 on:
   push:
     branches:
