@@ -10,12 +10,11 @@ jobs:
   build:
     permissions: write-all
     runs-on: ubuntu-latest
-    env:
-      GITHUB_TOKEN: ${{ secrets.ACTIONS_KEY }}
     steps:
       - name: Trigger Workflow
         uses: actions/github-script@v6
         with:
+          github-token: ${{ secrets.ACTIONS_KEY }}
           script: |
             github.rest.actions.createWorkflowDispatch({
               owner: 'shampeon',
