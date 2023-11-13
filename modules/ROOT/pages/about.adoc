@@ -1,13 +1,38 @@
 = About
+:url-org: https://github.com/shampeon
+:url-project: {url-org}/resume-component.git
+:url-site-project: {url-org}/docs-site.git
+:url-ui-project: {url-org}/antora-ui.git
 
 This site is authored in https://asciidoc.org[Asciidoc] and published using https://docs.antora.org[Antora].
 Think of it as a small example of what I think makes a good documentation site.
 For example, this content module is separate from the project that collects the content into a published site.
 This module could, therefore, be reused in a different context.
 
+== Structure of this site
+
+This site consists of three different GitHub repositories: this content module ({url-project}[`resume-component`]), the overall site ({url-site-project}[`docs-site`]), and the custom Antora UI ({url-ui-project}[`antora-ui`]).
+
+The `docs-site` repo has the Antora playbook, `antora-playbook.yaml`, the configuration file that defines all the content sources and UI bundle location that is used to output the site.
+
+The `antora-ui` repo is a fork of the default Antora UI with customizations to match the look and feel of my existing site.
+
+=== Continuous integration and continuous delivery
+
+I'm using GitHub Actions to provide continuous integration (CI) and continuous delivery (CD) with this site. 
+
+Changes to the `main` branch of `antora-ui` trigger a build of the UI bundle, and successful builds will result in a new `latest` tag and upload of the bundle ZIP file.
+
+Changes to the `main` branch of `docs-site` trigger a build of the site, and if the build succeeds the output will be uploaded automatically to the published web site.
+Changes to `docs-site` should be relatively rare, however, as `docs-site` only defines the configuration and sources for the site.
+Changes to the content module repositories are more common, and should also trigger a new build of `docs-site` when the `main` branch of the content module changes either through commits or pull request merges.
+It's harder to trigger these builds with GitHub Actions when you organize your repositories according to Antora's best practices, as the site repository is different than the content module repositories.
+The solution is to configure an Action in the content module (`resume-component` in my case) where changes to the `main` branch of the content module repository trigger a build in `docs-site` repository.
+To accomplish this, I created and configured a GitHub personal access token, stored as a repository secret, to trigger the build in `docs-site`.
+
 == Documentation formats
 
-I've used a pretty wide variety of formats for authoring technical documentation, starting off with unstructured Framemaker and moving on through SGML, DITA, restructedText, and more lately Markdown.
+I've used a pretty wide variety of formats for authoring technical documentation, starting off with unstructured Framemaker and moving on through SGML, DITA, restructuredText, and more lately Markdown.
 
 I tend to prefer semantic markup formats, and think https://en.wikipedia.org/wiki/WYSIWYM[WYSIWYM] is the best paradigm for technical communicators.
 But I also understand the appeal of simple, broadly implemented formats like Markdown, even if I don't actually love Markdown itself--I find it makes for a clumsy authoring experience.
@@ -16,7 +41,7 @@ Asciidoc is similar enough to Markdown to make it relatively easy to adapt for p
 It has most of the same strengths as Markdown--simple, lightweight, and readable markup--without the drawbacks: punting the difficult use-cases to raw HTML or non-standard extensions, multiple dialects with varying levels of support, no domain-specific syntax for technical communication, and an overemphasis on making the output look a certain way.
 Asciidoc is not semantic markup, but it was originally designed as a format for technical communicators.
 
-If you look at the https://github.com/shampeon/resume-component[source of this site], you will see that I'm using the https://asciidoctor.org/docs/asciidoc-recommended-practices/[Asciidoctor recommended best practices] for authoring in Asciidoc.
+If you look at the {url-project}[source of this site], you will see that I'm using the https://asciidoctor.org/docs/asciidoc-recommended-practices/[Asciidoctor recommended best practices] for authoring in Asciidoc.
 In particular, I'm using one sentence per line.
 While it's not a common practice among tech writers, it really does make a lot of sense in a world where https://www.writethedocs.org/guide/docs-as-code/[docs as code] is the dominant paradigm.
 Reviewing changes in a documentation pull request would be so much easier if everyone adopted one sentence per line.
